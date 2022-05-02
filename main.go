@@ -9,7 +9,7 @@ import (
 	//	"io/ioutil"
 	//	"net/http"
 	//	"strconv"
-		"time"
+	"time"
 
 	"database/sql"
 	//	"encoding/json"
@@ -65,7 +65,7 @@ type UnemploymentJsonRecords []struct {
 func main() {
 	// Establish connection to Postgres Database
 	//db_connection := "user=postgres dbname=chicagoTest password=root host=localhost sslmode=disable"
-	db_connection := "user=postgres dbname=chicagoTest password=root host=host.docker.internal sslmode=disable port = 5433"
+	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/chicagobusiness-intelligence:us-central1:mypostgres sslmode=disable port = 5432"
 
 	db, err := sql.Open("postgres", db_connection)
 	if err != nil {
