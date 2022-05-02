@@ -65,7 +65,7 @@ type UnemploymentJsonRecords []struct {
 func main() {
 	// Establish connection to Postgres Database
 	//db_connection := "user=postgres dbname=chicagoTest password=root host=localhost sslmode=disable"
-	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/chicago_business_intelligence:us-central1:mypostgres sslmode=disable port = 5432"
+	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/assignment53:us-central1:mypostgres2 sslmode=disable port = 5432"
 
 	db, err := sql.Open("postgres", db_connection)
 	if err != nil {
