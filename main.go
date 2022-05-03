@@ -100,6 +100,7 @@ func main() {
 
 func GetUnemploymentStats(db *sql.DB) {
 	fmt.Println("GetUnemploymentStats: Collecting Unemployment Data")
+	fmt.Println("GetUnemploymentStats: Collecting Unemployment Data")
 
 	drop_phrase := `drop table if exists unemployment_stats`
 	_, err := db.Exec(drop_phrase)
